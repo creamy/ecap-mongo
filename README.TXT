@@ -12,27 +12,23 @@ and licensed accordingly.
 NO WARRANTIES
 
 
-A C++ e-cap module that stores content in Mongo DB. This module may be loaded by Squid (or any e-cap 
-compatible cache/proxy). Content is stored in chunks as received/processed. A GUID is generated using 
-the Boost UUID library. The GUID should correspond to a unique request. Each chunk stored has a 
-corresponding index #. So the content can be (re)-assembled by concatenating chunks with the same 
-UUID in the order of the index.
+A C++ eCAP module that stores content in Mongo DB. This module may be loaded by Squid (or any eCAP compatible cache/proxy). Content is stored in chunks as received/processed. A GUID is generated using the Boost UUID library. The GUID should correspond to a unique request. Each chunk stored has a corresponding index #. So the content can be (re)-assembled by concatenating chunks with the same UUID in the order of the index. 
 
 
 References
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-MongoDB						http://www.mongodb.org/
-Squid						http://www.squid-cache.org/
-eCAP support in Squid			http://wiki.squid-cache.org/Features/eCAP
-eCAP library					http://www.e-cap.org/
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+MongoDB				http://www.mongodb.org/
+Squid				http://www.squid-cache.org/
+eCAP support in Squid		http://wiki.squid-cache.org/Features/eCAP
+eCAP library			http://www.e-cap.org/
 eCAP downloads/examples		http://www.e-cap.org/Downloads
-Mongo DB C++ Client Library		http://www.mongodb.org/pages/viewpage.action?pageId=133409
-Boost						http://www.boost.org/
+Mongo DB C++ Client Library	http://www.mongodb.org/pages/viewpage.action?pageId=133409
+Boost				http://www.boost.org/
 
 
 
 Notes using FreeBSD platform (gcc 4.6 w/ Boost)
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 # uname -a
 FreeBSD hunny.waitman.net 10.0-CURRENT FreeBSD 10.0-CURRENT #0: Fri Apr 20 20:56:16 PDT 2012     
