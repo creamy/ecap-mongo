@@ -12,7 +12,12 @@ and licensed accordingly.
 NO WARRANTIES
 
 
-A C++ eCAP module that stores content in Mongo DB. This module may be loaded by Squid (or any eCAP compatible cache/proxy). Content is stored in chunks as received/processed. A GUID is generated using the Boost UUID library. The GUID should correspond to a unique request. Each chunk stored has a corresponding index #. So the content can be (re)-assembled by concatenating chunks with the same UUID in the order of the index. 
+A C++ eCAP module that stores content in Mongo DB. This module may be loaded
+by Squid (or any eCAP compatible cache/proxy). Content is stored in chunks as
+received/processed. A GUID is generated using the Boost UUID library. The GUID
+should correspond to a unique request. Each chunk stored has a corresponding
+index #. So the content can be (re)-assembled by concatenating chunks with the
+same UUID in the order of the index. 
 
 
 References
